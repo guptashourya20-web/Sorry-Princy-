@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry ❤️</title>
+<style>
+body {
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family:Arial;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+width:90%;
+max-width:320px;
+}
+button{
+padding:12px 20px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+#yes{background:#ff4b5c;color:white;}
+#no{background:#ddd;}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>I'm Sorry 😔</h1>
+<p>Will you forgive me?</p>
+<button id="yes">Yes ❤️</button>
+<button id="no">No 😢</button>
+</div>
+
+<script>
+const noBtn=document.getElementById("no");
+noBtn.addEventListener("mouseover",()=>{
+noBtn.style.position="absolute";
+noBtn.style.left=Math.random()*200+"px";
+noBtn.style.top=Math.random()*200+"px";
+});
+</script>
+
+</body>
+</html>
